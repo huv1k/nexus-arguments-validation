@@ -1,0 +1,48 @@
+{
+  "name": "nexus-arguments-validation",
+  "version": "0.0.0-preview-1",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "Lukáš Huvar <lukas@huvar.cz>",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm -s run clean && tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "prettier": "prettier --write 'src/**/*.ts' 'test/**/*.ts' 'examples/**/*.ts'"
+  },
+  "files": [
+    "src",
+    "dist",
+    "LICENSE.md",
+    "README.md",
+    "yarn.lock"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "nexus": "^0.12.0-rc.9",
+    "set-value": "^3.0.1",
+    "yup": "^0.28.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "@types/set-value": "^2.0.0",
+    "@types/yup": "^0.26.27",
+    "graphql": "^14.5.8",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}

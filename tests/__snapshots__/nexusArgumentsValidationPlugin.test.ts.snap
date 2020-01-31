@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`nexusInputValidationPlugin incorrect validationSchema shape 1`] = `
+Array [
+  [Error: The validationSchema property provided to User should be a Yup schema, saw object],
+]
+`;
