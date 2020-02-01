@@ -4,7 +4,7 @@
 
 `nexus-arguments-validation` is a [Nexus](https://github.com/prisma-labs/nexus) plugin for arguments validation with [Yup](https://github.com/jquense/yup).
 
-![build](https://github.com/huv1k/nexus-arguments-validation/workflows/build/badge.svg)
+![build](https://github.com/huv1k/nexus-arguments-validation/workflows/Build%20and%20test/badge.svg)
 [![downloads](https://img.shields.io/npm/dt/nexus-arguments-validation.svg)](https://npmjs.org/package/nexus-arguments-validation?cacheSeconds=3600)
 [![version](https://img.shields.io/npm/v/nexus-arguments-validation.svg)](https://npmjs.org/package/nexus-arguments-validation?cacheSeconds=3600)
 
