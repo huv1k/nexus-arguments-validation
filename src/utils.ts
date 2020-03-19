@@ -1,5 +1,5 @@
+import type { ValidationError } from 'yup'
 import setIn from 'set-value'
-import { ValidationError } from 'yup'
 
 export type Maybe<T> = T | null | undefined
 

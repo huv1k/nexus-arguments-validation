@@ -1,5 +1,5 @@
-import { MiddlewareFn, plugin, CreateFieldResolverInfo } from 'nexus/dist/core'
-import { ObjectSchema, ValidationError } from 'yup'
+import type { ObjectSchema, ValidationError } from 'yup'
+import { MiddlewareFn, plugin, CreateFieldResolverInfo } from '@nexus/schema/dist/core'
 import { ArgumentsValidationError } from './error'
 import { FieldValidationResolver } from './fieldDefTypes'
 

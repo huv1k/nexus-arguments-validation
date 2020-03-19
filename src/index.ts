@@ -1,4 +1,4 @@
-import { plugin } from 'nexus'
+import { plugin } from '@nexus/schema'
 import { fieldDefTypes } from './fieldDefTypes'
 import { fieldResolver } from './fieldResolver'
 
