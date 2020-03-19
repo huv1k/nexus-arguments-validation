@@ -4,7 +4,7 @@ import {
   queryField,
   mutationField,
   stringArg,
-} from 'nexus'
+} from '@nexus/schema'
 import { nexusArgumentsValidationPlugin } from '../src'
 import { graphql } from 'graphql'
 import { object, string } from 'yup'
@@ -195,9 +195,13 @@ describe('nexusInputValidationPlugin', () => {
       plugins: [nexusArgumentsValidationPlugin()],
     })
 
-    const { data, errors = [] } = await mutation('wrongValidationSchema', variables, nexusSchema)
+    const { data, errors = [] } = await mutation(
+      'wrongValidationSchema',
+      variables,
+      nexusSchema,
+    )
 
-    expect(consoleError.mock.calls[0]).toMatchSnapshot();
+    expect(consoleError.mock.calls[0]).toMatchSnapshot()
     expect(errors.length).toEqual(0)
     expect(data!.wrongValidationSchema).toEqual(variables)
   })

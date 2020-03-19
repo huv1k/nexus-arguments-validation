@@ -1,6 +1,6 @@
-import { GraphQLError, Source, SourceLocation, ASTNode } from 'graphql'
+import type { ValidationError } from 'yup'
+import type { GraphQLError, Source, SourceLocation, ASTNode } from 'graphql'
 import { Maybe, formatValidationError } from './utils'
-import { ValidationError } from 'yup'
 
 export class ArgumentsValidationError extends Error implements GraphQLError {
   public extensions: Record<string, any>
